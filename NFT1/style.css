@@ -24,6 +24,15 @@ body {
   /* DECRATION */
   --fire: #ff6d00;
   --electric: #54d3ff;
+
+  /* FONTS */
+  --font-poppins: "Poppins";
+  --font-light: 300;
+  --font-regular: 400;
+  --font-semibold: 600;
+  /* --font-bold: 700; */
+  --font-black: 800;
+  --font-sn: 14px;
 }
 
 * {
@@ -33,4 +42,47 @@ body {
   list-style-type: none;
   text-decoration: none;
   font-family: "poppins", sans-serif;
+}
+
+.header {
+  background: var(--secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+}
+
+.imagen-logo,
+.logo-carrito {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar,
+.navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  gap: 8rem;
+}
+
+.navbar-list {
+  gap: 20px;
+}
+
+.navbar-list a {
+  color: var(--text-gray);
+  font-size: var(--font-sn);
+  font-weight: var(--font-semibold);
+}
+
+.navbar-list li:first-child a {
+  font-weight: var(--font-semibold);
+  color: var(--fire);
 }
