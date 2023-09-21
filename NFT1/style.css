@@ -105,7 +105,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: white; */
 }
 
 #hero {
@@ -115,14 +114,13 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: red; */
 }
 
 .hero-info {
-  /* background-color: green; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding: 25px;
   gap: 25px;
   width: 50%;
 }
@@ -165,6 +163,7 @@ main {
   gap: 18px;
   justify-content: center;
   width: 300px;
+  height: 350px;
 }
 
 .hero-card-info {
@@ -221,4 +220,50 @@ main {
 
 .hero-card-price span {
   font-weight: var(--font-black);
+}
+
+.logo-nft {
+  height: 40px;
+  width: 45px;
+}
+
+#info {
+  padding: 35px;
+}
+
+.section-info {
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+  align-items: center;
+}
+
+.section-info h2 {
+  color: var(--bg-white);
+  font-size: var(--font-xl);
+  font-weight: var(--font-black);
+  padding-bottom: 25px;
+}
+
+.cards-opciones-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 45px;
+  width: 80%;
+}
+
+.info-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  background-color: var(--secondary);
+  border-radius: 10px;
+  height: 250px;
+  padding: 15px;
+  gap: 20px;
+  box-sizing: content-box;
 }
