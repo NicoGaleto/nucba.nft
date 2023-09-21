@@ -32,7 +32,9 @@ body {
   --font-semibold: 600;
   /* --font-bold: 700; */
   --font-black: 800;
+
   --font-sn: 14px;
+  --font-xl: 28px;
 }
 
 * {
@@ -85,4 +87,138 @@ body {
 .navbar-list li:first-child a {
   font-weight: var(--font-semibold);
   color: var(--fire);
+}
+
+.card1 {
+  width: 120px;
+  height: 200px;
+}
+
+.hero-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: white; */
+}
+
+#hero {
+  margin-top: 65px;
+  padding: 50px 0px;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.hero-info {
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  width: 50%;
+}
+
+.hero-info h1 {
+  font-size: var(--font-xl);
+  font-weight: var(--font-black);
+  color: var(--electric);
+}
+
+.hero-info p {
+  font-weight: var(--font-semibold);
+  width: 70%;
+  color: var(--text-gray);
+}
+
+.hero-info p span {
+  font-weight: var(--font-black);
+  color: black;
+}
+
+.btn {
+  color: var(--text-white);
+  background-color: var(--primary);
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+.soldado3 {
+  height: 45px;
+  width: 45px;
+}
+
+.hero-card {
+  background-color: var(--secondary);
+  padding: 15px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  justify-content: center;
+  width: 300px;
+}
+
+.hero-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hero-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.hero-card-top h3 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: var(--font-semibold);
+}
+
+.hero-card-top span {
+  background-color: var(--primary);
+  border-radius: 5px;
+  padding: 5px 15px;
+  font-size: var(--font-sn);
+}
+
+.hero-card-botton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-card-creator {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+}
+
+.creator-info span,
+.hero-card-price p {
+  color: var(--text-gray);
+  font-size: var(--font-sn);
+  font-weight: var(--font-light);
+}
+
+.creator-info p,
+.hero-card-price span {
+  font-size: var(--font-sn);
+}
+
+.hero-card-price span {
+  font-weight: var(--font-black);
 }
