@@ -475,3 +475,28 @@ main {
   padding: 10px 25px;
   cursor: pointer;
 }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 0px;
+  color: var(--text-white);
+}
+
+.foother-link {
+  display: flex;
+  gap: 20px;
+}
+
+footer a {
+  color: var(--text-gray);
+  font-size: var(--font-sn);
+  font-weight: var(--font-light);
+}
+
+footer span {
+  font-weight: var(--font-black);
+}
