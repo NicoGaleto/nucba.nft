@@ -2,6 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@1,300;1,400;1,600;1,800;1,900&display=swap");
 
+/* BODY Y VARIABLES  */
 body {
   background-color: var(--background);
 }
@@ -11,6 +12,7 @@ body {
   --background: #02050e;
   --primary: #1e50ff;
   --secondary: #272a37;
+  --optional: #1a1a6d;
   --btn-bg: #050d26;
   --bg-azul-10: #e9eeff;
   --bg-white: #fff;
@@ -32,11 +34,12 @@ body {
   --font-semibold: 600;
   /* --font-bold: 700; */
   --font-black: 800;
-
+  /*font size  */
   --font-sn: 14px;
+  --font-ml: 20px;
   --font-xl: 28px;
 }
-
+/* ESPECIFIACIONES GENERALES */
 * {
   margin: 0;
   padding: 0;
@@ -46,6 +49,7 @@ body {
   font-family: "poppins", sans-serif;
 }
 
+/* HEADER NAVBAR */
 .header {
   background: var(--secondary);
   display: flex;
@@ -89,24 +93,20 @@ body {
   color: var(--fire);
 }
 
-.card1 {
-  width: 120px;
-  height: 200px;
-}
-
-.hero-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
+/* MENU */
 main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+/* SECTION 1 */
+.card1 {
+  width: 100px;
+  height: 160px;
+}
 
+/* contenedor principal */
 #hero {
   margin-top: 65px;
   padding: 50px 0px;
@@ -116,6 +116,7 @@ main {
   align-items: center;
 }
 
+/* datos del primer contenedor secundario */
 .hero-info {
   display: flex;
   flex-direction: column;
@@ -149,6 +150,7 @@ main {
   border-radius: 5px;
 }
 
+/* segundo contenedor secundario */
 .soldado3 {
   height: 45px;
   width: 45px;
@@ -156,13 +158,15 @@ main {
 
 .hero-card {
   background-color: var(--secondary);
-  padding: 15px;
+  padding: 25px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  gap: 18px;
   justify-content: center;
-  width: 300px;
+  align-items: center;
+  gap: 18px;
+  box-sizing: content-box;
+  width: 250px;
   height: 350px;
 }
 
@@ -227,6 +231,8 @@ main {
   width: 45px;
 }
 
+/* SECTION 2  */
+
 #info {
   padding: 35px;
 }
@@ -234,7 +240,6 @@ main {
 .section-info {
   display: flex;
   flex-direction: column;
-  /* background-color: red; */
   align-items: center;
 }
 
@@ -254,6 +259,7 @@ main {
   width: 80%;
 }
 
+/* cards section 2*/
 .info-cards {
   display: flex;
   flex-direction: column;
@@ -266,4 +272,206 @@ main {
   padding: 15px;
   gap: 20px;
   box-sizing: content-box;
+}
+
+.titulo-cards-section {
+  padding-bottom: 15px;
+  font-size: var(--font-sn);
+  font-weight: var(--font-semibold);
+  color: var(--text-white);
+}
+
+/* SECTION 3  */
+
+#discover {
+  padding: 70px;
+  max-width: 1200px;
+}
+
+/* primer contenedor  */
+.discover-info {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+.discover-info h2 {
+  font-size: var(--font-ml);
+  font-weight: var(--font-black);
+  color: var(--text-white);
+  width: 45%;
+}
+
+.discover-text {
+  display: flex;
+  flex-direction: column;
+  color: var(--text-gray);
+  gap: 20px;
+  width: 45%;
+}
+
+.discover-text a {
+  background-color: var(--secondary);
+  color: var(--text-white);
+  padding: 4px;
+  border-radius: 5px;
+  width: max-content;
+  text-decoration: underline;
+}
+
+/* especificaciones cards  */
+.soldado-caminando {
+  width: 140px;
+  height: 220px;
+  background-color: var(--optional);
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.discover-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.discover-cards img {
+  width: 30%;
+}
+
+/* SECTION 4 PRODUCTOS */
+
+#products {
+  padding: 70px;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+#products h2 {
+  font-size: var(--font-ml);
+  font-weight: var(--font-black);
+  color: var(--bg-white);
+}
+
+.categories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.category {
+  text-wrap: nowrap;
+  background: var(--btn-bg);
+  color: var(--text-white);
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.active {
+  background: var(--primary);
+}
+
+/* SECTION 4 PRODUCTS */
+
+.soldado-img {
+  width: 150px;
+  height: 250px;
+}
+.personas22 {
+  width: 50px;
+  height: 40px;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 40px;
+}
+
+.product {
+  background: var(--secondary);
+  width: 250px;
+  padding: 10px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  /* align-items: center; */
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.product-top,
+.product-mid,
+.product-bot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-top h3 {
+  font-size: var(--font-sn);
+  font-weight: var(--font-semibold);
+  color: var(--text-white);
+}
+
+.product-top p,
+.product-user p {
+  color: var(--text-gray);
+}
+
+.product-user,
+.offer-time {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.product-mid span {
+  font-weight: var(--font-semibold);
+  color: var(--text-white);
+}
+
+.offer-time {
+  font-weight: var(--font-semibold);
+}
+.offer-time img {
+  width: 20px;
+  height: 28px;
+}
+
+.btn-add {
+  font-weight: var(--font-semibold);
+  background: var(--primary);
+  border: none;
+  color: var(--text-white);
+  padding: 8px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-load {
+  border: 1px solid var(--electric);
+  background: none;
+  color: var(--text-white);
+  border-radius: 10px;
+  padding: 10px 25px;
+  cursor: pointer;
 }
